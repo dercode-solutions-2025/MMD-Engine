@@ -22,3 +22,7 @@ function gethtml(line) {
     }
     return formatted(line);
  }
+function main(line) {
+  window.open(gethtml(line));
+}
+main();
