@@ -1,5 +1,5 @@
 // command $ text
-function gethtml(line) {
+export function gethtml(line) {
   function getcommname(line) {
     let commname = line.split('$')[0];
     return commname;
@@ -22,7 +22,3 @@ function gethtml(line) {
     }
     return formatted(line);
  }
-function main(line) {
-  window.open(gethtml(line));
-}
-main();
